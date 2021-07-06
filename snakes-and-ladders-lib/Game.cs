@@ -15,8 +15,14 @@ namespace snakes_and_ladders_lib
 
         public void Move(int numberOfSpaces)
         {
-            CurrentPosition += numberOfSpaces;
-            if (CurrentPosition == 100) IsFinished = true;
+            var futurePosition = CurrentPosition + numberOfSpaces;
+
+            if (futurePosition == 100) {
+                IsFinished = true;
+                CurrentPosition = futurePosition;
+            } else if (futurePosition < 100) {
+                CurrentPosition = futurePosition;
+            }
         }
     }
 }
