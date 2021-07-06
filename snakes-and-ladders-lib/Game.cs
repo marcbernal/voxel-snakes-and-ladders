@@ -7,6 +7,9 @@ namespace snakes_and_ladders_lib {
         public Game() {
             CurrentPosition = 1;
         } 
-               
+
+        public void Move(int numberOfSpaces) {
+            CurrentPosition += numberOfSpaces;
+        }
     }
 }
