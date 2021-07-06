@@ -2,9 +2,9 @@
 
 ## Overview 
 
-Class library for the three user stories of the Voxel's task and a xUnit tests project. Each story has been worked on using TDD by iterating over the code and refactoring at each iteration.
+Class library for the three user stories of the Voxel's task and an xUnit tests project. Each story has been worked on using TDD by iterating over the code and refactoring at each iteration.
 
-Three tests files with the corresponding test cases are created based on the three user stories, and they look like this:
+Three test files with their corresponding test cases are created based on the three user stories, and they look like this:
 
 ![Tests overview](./images/tests-expected.png)
 
@@ -26,6 +26,6 @@ If everything works as expected, we should see something like this:
 
 ![Tests results](./images/tests-console-expected.png)
 
-To see more verbose on the tests results, add `-v=n`
+To see a more verbose description on the tests results, add `-v=n`
 
 
