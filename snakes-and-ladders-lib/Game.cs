@@ -23,10 +23,14 @@ namespace snakes_and_ladders_lib
         {
             var futurePosition = CurrentPosition + numberOfSpaces;
 
+            // Check if theres snake on position, 
             if (futurePosition == 100) {
                 IsFinished = true;
                 CurrentPosition = futurePosition;
-            } else if (futurePosition < 100) {
+            } if (futurePosition == 12) {
+                CurrentPosition = 2;
+            } 
+            else if (futurePosition < 100) {
                 CurrentPosition = futurePosition;
             }
         }
